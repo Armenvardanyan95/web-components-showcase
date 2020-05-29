@@ -1,27 +1,21 @@
 # WebComponents
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2, but has been upgraded to use Angular 10 RC.
 
-## Development server
+## How to run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project uses @angular/elements to bootstrap a minimal button web component.
+To make it work install the dependencies using 
 
-## Code scaffolding
+`$ npm install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+And then run 
 
-## Build
+`$ ng build FirstWebComponent`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This will generate the Web Component js files. Then simply open the "`web-component.showcase.html`"
+file to see the button. You can make changes to the web component and re0run the build process to see the changes. Or you can run
 
-## Running unit tests
+`$ ng build FirstWebComponent --watch`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+to get hot rebuilding (note that you will still have to reload the browser tab  manually).
