@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-uibutton',
   templateUrl: './uibutton.component.html',
   styleUrls: ['./uibutton.component.scss']
 })
-export class UIButtonComponent implements OnInit {
+export class UIButtonComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input() label = '';
 
 }
